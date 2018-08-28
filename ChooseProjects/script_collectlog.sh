@@ -1,7 +1,7 @@
 #! /bin/bash
 filename=$1
 fromdir=/target/
-todir=/home/chenxi/ChooseProjects_log/
+todir=/home/chenxi/Log_pitest/
 logfix=./22SHA_Statistics/
 prefix=./
 infix=_
@@ -19,12 +19,12 @@ do
 echo ${line2%% *}
 
 echo “******start cp pitest-report target dir*******”
-cp $prefix$line$infix2$line$infix${line2%% *}$infix2$line$infix2"pitest_log.txt" $todir$line$infix2$line$infix${line2%% *}$infix2
+cp $prefix$line$infix2$line$infix${line2%% *}$infix2$line$infix2"pitest_skiptests_log.txt" $todir$line$infix2$line$infix${line2%% *}$infix2
 cp -arf $prefix$line$infix2$line$infix${line2%% *}$infix2$line$fromdir"pit-reports/" $todir$line$infix2$line$infix${line2%% *}$infix2
 
 echo “******start cp ekstazi and starts log**********”
-cp $prefix$line$infix2$line$infix${line2%% *}$infix2$line$infix2"ekstazi_log.txt" $todir$line$infix2$line$infix${line2%% *}$infix2
-cp $prefix$line$infix2$line$infix${line2%% *}$infix2$line$infix2"ekstazi_nextversion_log.txt" $todir$line$infix2$line$infix${line2%% *}$infix2
+#cp $prefix$line$infix2$line$infix${line2%% *}$infix2$line$infix2"ekstazi_log.txt" $todir$line$infix2$line$infix${line2%% *}$infix2
+#cp $prefix$line$infix2$line$infix${line2%% *}$infix2$line$infix2"ekstazi_nextversion_log.txt" $todir$line$infix2$line$infix${line2%% *}$infix2
 #cp $prefix$line$infix2$line$infix${line2%% *}$infix2$line$infix2"starts_log.txt" $todir$line$infix2$line$infix${line2%% *}$infix2
 #cp $prefix$line$infix2$line$infix${line2%% *}$infix2$line$infix2"starts_nextversion_log.txt" $todir$line$infix2$line$infix${line2%% *}$infix2
 

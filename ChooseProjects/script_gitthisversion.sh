@@ -22,9 +22,11 @@ echo “******start cd version dir of project*******”
 cd ${line}${infix}${line2%% *}
 cd ${line}
 
-echo “******start test and pitest**********”
-mvn test > mvntest_log.txt
-mvn -DskipTests=true -DoutputFormats=XML org.pitest:pitest-maven:1.2.5-SNAPSHOT:mutationCoverage > pitest_skiptests_log.txt
+echo "******start git checkout pom.xml******"
+git checkout -- pom.xml
+
+echo “******start git checkout this version**********”
+git checkout ${line2%% *} 
 
 cd ..
 cd ..
