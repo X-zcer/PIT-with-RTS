@@ -1,0 +1,14 @@
+github-plugin
+ci-sauce
+config-file-provider-plugin
+contentful.java
+gerrit-rest-java-client
+copyartifact-plugin
+gauge-java
+datanucleus-api-jdo
+grammarviz2_src
+fat32-lib
+graph-maven-plugin
+fb-botmill
+exec-maven-plugin
+embedded-jmxtrans
