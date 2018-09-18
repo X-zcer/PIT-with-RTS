@@ -38,7 +38,7 @@ echo "******start git checkout this version******"
 git checkout ${line2%% *}
 
 echo "******start ekstazi this version******"
-mvn ekstazi:ekstazi-maven-plugin:5.2.0:ekstazi > ekstazi_fifthversion_this_log.txt
+mvn org.ekstazi:ekstazi-maven-plugin:5.2.0:ekstazi > ekstazi_fifthversion_this_log.txt
 
 
 echo “******start git checkout fifth version******”
@@ -46,7 +46,7 @@ git checkout $line3
 
 echo “******start ekstazi fifth version**********”
 #mvn test
-mvn ekstazi:ekstazi-maven-plugin:5.2.0:ekstazi > ekstazi_fifthversion_fifth_log.txt
+mvn org.ekstazi:ekstazi-maven-plugin:5.2.0:ekstazi > ekstazi_fifthversion_fifth_log.txt
 
 cd ..
 cd ..

@@ -27,12 +27,21 @@ echo “******start cd version dir of project*******”
 cd ${line}${infix}${line2%% *}
 cd ${line}
 
+echo "******start git checkout pom.xml******"
+#git checkout -- pom.xml
+
+echo "******start git checkout this version******"
+git checkout ${line2%% *}
+
+echo "******start ekstazi this version******"
+mvn org.ekstazi:ekstazi-maven-plugin:5.2.0:ekstazi > ekstazi_nextversion_this_log.txt
+
 echo “******start git checkout next version******”
 git checkout $line3
 
 echo “******start ekstazi next version**********”
 #mvn test
-mvn ekstazi:ekstazi-maven-plugin:5.2.0:ekstazi > ekstazi_nextversion_log.txt
+mvn org.ekstazi:ekstazi-maven-plugin:5.2.0:ekstazi > ekstazi_nextversion_next_log.txt
 
 cd ..
 cd ..

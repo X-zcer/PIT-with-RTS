@@ -10,7 +10,8 @@ while read line
 do
 echo $line
 
-echo “******start cd root dir of project*****”
+echo “******start mkdir and cd root dir of project*****”
+mkdir $line
 cd ${line}
 
 echo “******start read logfile************“
@@ -18,16 +19,9 @@ while read line2
 do
 echo ${line2%% *}
 
-echo “******start cd version dir of project*******”
-cd ${line}${infix}${line2%% *}
-cd ${line}
+echo “******start mkdir version dir of project*******”
+mkdir $line$infix${line2%% *}
 
-echo “******start ekstazi**********”
-#mvn test
-mvn org.ekstazi:ekstazi-maven-plugin:5.2.0:ekstazi > ekstazi_log.txt
-
-cd ..
-cd ..
 done < ${prefix}${line}${suffix}
 
 cd ..

@@ -22,9 +22,11 @@ echo “******start cd version dir of project*******”
 cd ${line}${infix}${line2%% *}
 cd ${line}
 
-echo “******start ekstazi**********”
-#mvn test
-mvn org.ekstazi:ekstazi-maven-plugin:5.2.0:ekstazi > ekstazi_log.txt
+#echo "******start delete target******"
+#rm -rf ./target
+
+echo “******start delete pit-reports**********”
+rm -rf ./target/pit-reports/*
 
 cd ..
 cd ..
