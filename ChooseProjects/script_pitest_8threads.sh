@@ -24,7 +24,7 @@ cd ${line}
 
 echo “******start test and pitest**********”
 mvn test > mvntest_log.txt
-mvn -Dthreads=2 -DskipTests=true -DoutputFormats=XML org.pitest:pitest-maven:1.2.5-SNAPSHOT:mutationCoverage > pitest_skiptests_log.txt
+mvn -Dthreads=8 -DskipTests=true -DoutputFormats=XML org.pitest:pitest-maven:1.2.5-SNAPSHOT:mutationCoverage > pitest_skiptests_log.txt
 
 cd ..
 cd ..

@@ -18,13 +18,17 @@ while read line2
 do
 echo ${line2%% *}
 
+echo “******start mkdir version of project*******”
+mkdir ${line}${infix}${line2%% *}
+
+echo “******start read logfile line and cp********”
+cp -arf ${line} ${line}${infix}${line2%% *}${infix2}${line}
+
 echo “******start cd version dir of project*******”
 cd ${line}${infix}${line2%% *}
 cd ${line}
-
-echo “******start test and pitest**********”
-mvn test > mvntest_log.txt
-mvn -Dthreads=2 -DskipTests=true -DoutputFormats=XML org.pitest:pitest-maven:1.2.5-SNAPSHOT:mutationCoverage > pitest_skiptests_log.txt
+echo “******start git checkout**********”
+git checkout ${line2%% *} 
 
 cd ..
 cd ..
