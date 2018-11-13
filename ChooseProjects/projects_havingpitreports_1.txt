@@ -1,0 +1,4 @@
+aspectj-maven-plugin
+fat32-lib
+geopackage-core-java
+embedded-jmxtrans
