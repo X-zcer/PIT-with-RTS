@@ -1,0 +1,12 @@
+restfb
+jackson-core
+MutabilityDetector
+spotify-web-api-java
+smartsheet-java-sdk
+lavagna
+java-lattices
+KittehIRCClientLib
+Bastion
+cts
+SAX
+samskivert

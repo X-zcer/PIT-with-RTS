@@ -1,0 +1,12 @@
+commons-cli
+commons-dbutils
+commons-fileupload
+commons-validator
+commons-codec
+commons-compress
+commons-email
+commons-dbcp
+commons-pool
+commons-net
+commons-functor
+commons-jxpath

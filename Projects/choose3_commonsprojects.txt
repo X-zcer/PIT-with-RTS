@@ -1,0 +1,13 @@
+invokebinder
+logstash-logback-encoder
+compile-testing
+HikariCP
+commons-io
+stream-lib
+mapdb
+jfreechart
+joda-time
+log4j
+commons-configuration
+java-apns
+la4j

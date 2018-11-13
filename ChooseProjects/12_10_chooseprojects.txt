@@ -1,0 +1,10 @@
+jackson-core
+MutabilityDetector
+spotify-web-api-java
+lavagna
+java-lattices
+KittehIRCClientLib
+Bastion
+cts
+SAX
+samskivert
